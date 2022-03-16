@@ -1,0 +1,22 @@
+ipython
+notebook
+jupyter
+jupyter_contrib_nbextensions
+nbconvert
+
+############### DS ###############
+numpy
+pandas
+matplotlib
+seaborn
+
+############### ML ###############
+scikit-learn
+scipy
+tqdm
+pytorch
+
+############### Computer_Vision ###############
+Pillow
+opencv-python
+
