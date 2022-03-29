@@ -9,6 +9,8 @@
 #       - fwd pass : compute prediction and loss
 #       - bwd pass : compute gradient
 #       - update : update weights
+# 4) Model Evaluation
+
 
 import numpy as np
 import torch
@@ -50,7 +52,7 @@ y_test = y_test.view(-1, 1)
 
 # 1) Model Design ------------------------------------------------------------------------------
 class LogRegression(nn.Module):
-
+    # f = wx + b, sigmoid at the end
     def __init__(self, n_input_features):
         super(LogRegression, self).__init__()
         self.linear = nn.Linear(n_input_features, 1)
@@ -87,7 +89,7 @@ for epoch in range(num_epochs):
     if (epoch + 1) % 10 == 0:
         print(f'epoch: {epoch + 1}, loss = {loss.item():.4f}')
 
-# 3) Model Evaluation --------------------------------------------------------------------------
+# 4) Model Evaluation --------------------------------------------------------------------------
 with torch.no_grad():
     y_hat = model(X_test)
     y_hat_classes = y_hat.round()
