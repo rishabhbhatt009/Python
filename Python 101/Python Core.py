@@ -1,6 +1,5 @@
-name = 'Rishabh'
-print(f'Hello World ! My Name is {name} \n')
-
+# name = 'Rishabh'
+# print(f'Hello World ! My Name is {name} \n')
 # ----------------------------------------------------------
 
 # Data Structures ------------------------------------------
@@ -30,9 +29,13 @@ print(f'Hello World ! My Name is {name} \n')
 # print(lst3, lst4, sep='\n')
 
 
-# Spiral Question -------------------------------------
-matrix = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]
+# String Format --------------------------------------------
+# print('{:-<100}'.format(f'Importing Data from : {12345}'))
+# print('{:-<50}{:->50}'.format('Import Complete', f'run_time:{1.2334:.3f} secs'))
+# s = 'xyz'
+# print(f'{s:-<100}')
+# print(f"{'xyz':-<100}" )
 
-while (matrix != []):
-    print(matrix[1:][1:])
-    # matrix =
+# pp = '{:<20}{:<20}{:>20}'
+# print(pp.format(f'Epoch {1},', f'Step {1}/{10},', f'loss = {0.3424:.4f} '))
+# print(pp.format(f'Epoch {1010},', f'Step {10}/{1000},', f'loss = {0.3424:.4f}'))
