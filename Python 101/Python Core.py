@@ -1,41 +1,63 @@
-# name = 'Rishabh'
-# print(f'Hello World ! My Name is {name} \n')
-# ----------------------------------------------------------
+###################################################################################################
 
-# Data Structures ------------------------------------------
-# lst1 = list(name)
-# lst2 = list(range(len(name)))
-#
-# assert name[len(name)-1:-len(name)-1:-1] == name[::-1]
-#
-# print(name+name)
+### Data Structures
 
-# dict_ = dict(zip(lst2, lst1))
-#
-# print(dict_)
-# print(dict_.items())
-# print(list(enumerate(lst1)))
+# 1. List
+#   - ordered, mutable and stores duplicate elements
+#   - To create a new copy of the list -> lst.copy(), list(lst), lst[:]
+#   Methods
+#   - add elements      : append, +, extend, insert
+#   - remove elements   : pop, remove, clear
+#   - order elements    : reverse, sort, sorted
+#   - copy              : lst.copy, lst[:], list(lst)
+#   - count elements    : count(element)
+#   - first index       : index(element)
 
+# 2. Tuple
+#   - ordered, immutable and stores duplicate elements
+#   - packing and unpacking
+#   - more optimal for larger data [*]
+#   Methods
+#   - add elements      : immutable (create new tuple with +)
+#   - remove elements   : immutable
+#   - copy              : tup.copy, tup[:], tuple(lst)
+#   - count elements    : count(element)
+#   - first index       : index(element)
 
-# List Comprehension ---------------------------------------
-# nums = list(range(0, 11))
+# 3. Dictionaries
+#   - unordered, mutable, key-value pairs
+#   - keys are hashed
+#   - list are unhashable therefore can not be used as keys
+#   Methods
+#   - get keys          : dict.keys()
+#   - get values        : dict.values()
+#   - get key,values    : dict.items()
+#   - add elements      : new key val assignment, update
+#   - remove elements   : del, pop, popitem
+#   - copy              : dict.copy, tuple(lst)
 
-# lst1 = [i * i for i in nums]
-# lst2 = list(map(lambda x: x * x, nums))
-# print(lst1, lst2, sep='\n')
-#
-# lst3 = [i for i in nums if i % 2 == 0]
-# lst4 = list(filter(lambda x: x % 2 == 0, nums))
-# print(lst3, lst4, sep='\n')
+# 4. Sets
+#   - unordered, mutable, no duplicates
+#   - frozenset
+#   Methods
+#   - add elements      : add
+#   - remove elements   : remove, discard, clear, pop
+#   - union             : combine sets
+#   - intersection      : intersection of 2 sets
+#   - difference        : difference b/w 2 sets
+#   - symetric diff     : all elements except those in both
+#   - check for subset  : issubset, issuperset, isdisjoint [*]
+#   - update set        : update, intersection_update, defference_update, symmetric_diff_update
 
+# 5. Strings
+#   - ordered, immutable
+#   Methods
+#   - strip, rstrip, lstrip
+#   - upper, lower
+#   - startswith, endswith
+#   - find, count
+#   - replace
+#   - split, join [*]
+#   - format
 
-# String Format --------------------------------------------
-# print('{:-<100}'.format(f'Importing Data from : {12345}'))
-# print('{:-<50}{:->50}'.format('Import Complete', f'run_time:{1.2334:.3f} secs'))
-# s = 'xyz'
-# print(f'{s:-<100}')
-# print(f"{'xyz':-<100}" )
-
-# pp = '{:<20}{:<20}{:>20}'
-# print(pp.format(f'Epoch {1},', f'Step {1}/{10},', f'loss = {0.3424:.4f} '))
-# print(pp.format(f'Epoch {1010},', f'Step {10}/{1000},', f'loss = {0.3424:.4f}'))
+###################################################################################################
